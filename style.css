@@ -1,0 +1,47 @@
+body{
+    background-color: darkgrey;
+}
+.header{
+     background-color: rgba(158, 157, 248, 0.3);
+    height: 50px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    color: rgb(9, 8, 92);
+}
+.backlog{
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: midnightblue;
+    width:50%;
+    height: 250px;
+    margin: auto;
+    padding: 15px;
+    background-image: url(beachh.jpg);
+}
+.wrapper{
+    height: 480px;
+    background-color: rgb(255,255,200);
+    padding: 25px;
+}
+fieldset{
+    width: 50%;
+    margin: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#fname, #lname, #email, #password, #submit{
+float: right;
+width: 60%;
+border-radius: 5px;
+overflow: hidden;
+cursor: pointer;
+color: midnightblue;
+}
+#lsubmit{
+    float: right;
+width: 40%;
+border-radius: 5px;
+cursor: pointer;
+color: midnightblue;
+}
