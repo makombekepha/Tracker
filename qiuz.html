@@ -99,6 +99,18 @@ function display(){
      pag.appendChild(scan);
    scan.appendChild(para);
    para.innerHTML=txt;
+
+   var vote = document.createElement("button");
+   var rit = document.createElement("button");
+  var wron = document.createElement("button");
+  vote.innerHTML = 'VOTE QUIZ';
+            rit.innerHTML='<i class="fa fa-check-square"></i>';
+            wron.innerHTML='<i class="fa fa-times-circle"></i>';
+            vote.style.fontSize = "small";
+            scan.style.backgroundColor="aquamarine"
+            scan.appendChild(vote);
+            scan.appendChild(rit);
+            scan.appendChild(wron);
 }
 
     </script>
