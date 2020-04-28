@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        .header{
+            text-align: center;
+            background-color: rgb(170, 162, 162);
+            height: 40px;
+            margin-bottom: 5px;
+        }
+     #myfrm{
+         width: 80%;
+         background-color: dodgerblue;
+         margin: auto;
+         padding: 10px;
+         min-height:450px;
+         box-sizing: border-box;
+         border-radius: 10px;
+     }
+     .tarea{
+         width: 99%;
+         background-color: white;
+         border-radius: 5px;
+         -visibility: hidden;
+         
+         
+     }
+     #btn{
+      border-radius: 5px;
+      float: right;
+      width: 10%;
+      height: 25px;
+      font-size: smaller;
+      padding: 0px;
+     }
+     #quizer{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 10px;
+         min-height: 20px;
+     }
+     #ipbox{
+         width: 85%;
+         background-color: white;
+         border-radius: 5px;
+         height: 20px;
+     }
+     #quizz{
+         margin: 3px;
+         --background-color: white;
+         min-height: 150px;
+         width: 98%;
+         padding:5px
+     }
+     .disp{
+         width: 99%;
+         word-wrap: break-word;
+         background-color: aquamarine;
+         padding: 5px;
+     }
+     .bttn{
+        height: 25px;
+        
+         font-size: small;
+         border-radius: 5px;
+     }
+    </style>
+    <title>Questioner Query Page</title>
+</head>
+<body>
+    <div class="header">
+        <h2>QUESTIONER</h2>
+    </div>
+    <div class="quiz">
+        <div id="myfrm">
+            <scan id="quizer">
+            <input type="text" id="ipbox" placeholder="Ask a question"></input><br>
+            <button id="btn" onclick="display()">ASK</button><br><br>
+            </scan>
+            <div id="quizz"></div>
+        </div>
+    </div>
+<script>
+   
+function display(){
+      var hor = document.createElement("hr");
+    
+     var para = document.createElement("p");
+    var txt = document.getElementById("ipbox").value;
+    var pag = document.getElementById("quizz");
+    var scan = document.createElement("div");
+    
+    //var txta = document.createElement("textarea");
+    //var vote = document.createElement("button");
+    //var rit = document.createElement("button");
+    //var wron = document.createElement("button");
+    scan.appendChild(hor);
+    //vote.innerHTML = 'VOTE QUIZ';
+     //rit.innerHTML='<i class="fa fa-check-square"></i>';
+     //wron.innerHTML='<i class="fa fa-times-circle"></i>';
+     scan.classList.add("disp");
+     //vote.style.fontSize="small";
+     //scan.style.backgroundColor="aquamarine"
+     pag.appendChild(scan);
+     //scan.appendChild(vote);
+     //scan.appendChild(rit);
+     //scan.appendChild(wron);
+     
+     //txta.placeholder="Give a comment on the question."
+    // txta.classList.add("tarea");
+    
+      //var comm = document.createElement("button");
+      //comm.classList.add("bttn");
+     // comm.innerHTML="COMMENT";
+   scan.appendChild(para);
+   para.innerHTML=txt;
+   //scan.appendChild(txta);
+   /* scan.appendChild(comm);
+   
+  
+    
+    
+   comm.addEventListener('click',comment);
+   
+   function comment(){
+    const comt=txta.value;
+  var par=document.createElement("p");
+  par.innerHTML=comt;
+  scan.appendChild(par);
+  
+   }*/
+ 
+}
+
+    </script>
+</body>
+</html>
