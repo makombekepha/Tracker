@@ -57,12 +57,7 @@
          background-color: aquamarine;
          padding: 5px;
      }
-     .bttn{
-        height: 25px;
-        
-         font-size: small;
-         border-radius: 5px;
-     }
+    
      
     </style>
     <title>Questioner Query Page</title>
@@ -98,7 +93,19 @@ function display(){
      scan.classList.add("disp");
      pag.appendChild(scan);
    scan.appendChild(para);
-   para.innerHTML=txt;
+    para.innerHTML=txt;
+
+   var vote = document.createElement("button");
+   var rit = document.createElement("button");
+  var wron = document.createElement("button");
+  vote.innerHTML = 'VOTE QUIZ';
+            rit.innerHTML='<i class="fa fa-check-square"></i>';
+            wron.innerHTML='<i class="fa fa-times-circle"></i>';
+            vote.style.fontSize = "small";
+            scan.style.backgroundColor="aquamarine"
+            scan.appendChild(vote);
+            scan.appendChild(rit);
+            scan.appendChild(wron);
 }
 
     </script>
